@@ -13,6 +13,9 @@ namespace AreaCalculation.Figures
 
         public static double Area(double a, double b, double c)
         {
+            if (!IsPossible(a, b, c))
+                throw new Exception("Triangle is impossible");
+
             double[] sides = { a, b, c };
             Array.Sort(sides);
 
@@ -34,6 +37,17 @@ namespace AreaCalculation.Figures
         private static bool IsRight(double leg1, double leg2, double hypotenuse)
         {
             return Math.Pow(leg1, 2) + Math.Pow(leg2, 2) == Math.Pow(hypotenuse, 2);
+        }
+
+        private static bool IsPossible(double a, double b, double c) 
+        {
+            if (a < 0 ||  b < 0 || c < 0)
+                return false;
+
+            if (a + b <= c || a + c <= b || b + c <= a)
+                return false;
+
+            return true;
         }
     }
 }
