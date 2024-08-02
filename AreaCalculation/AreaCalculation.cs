@@ -2,14 +2,14 @@
 
 namespace AreaCalculation
 {
-    public class AreaCalculation
+    public static class AreaCalculation
     {
         /// <summary>
         /// This method calculates the area of a circle.
         /// </summary>
         /// <param name="radius">The radius of the circe.</param>
         /// <returns>The area of the circle.</returns>
-        public double Area(double radius)
+        public static double Area(double radius)
         {
             try
             {
@@ -25,7 +25,7 @@ namespace AreaCalculation
         /// <param name="b">The length of the second side of the triangle.</param>
         /// <param name="c">The length of the third side of the triangle.</param>
         /// <returns>The area of the triangle.</returns>
-        public double Area(double a, double b, double c)
+        public static double Area(double a, double b, double c)
         {
             try
             {

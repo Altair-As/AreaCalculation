@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaCalculation", "AreaCalculation\AreaCalculation.csproj", "{C223A78F-7CEE-426E-AE8B-281033CD8C74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaCalculation.Tests", "AreaCalculation.Tests\AreaCalculation.Tests.csproj", "{8C1145E3-3C20-4ACC-B4D1-6CA025086916}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C223A78F-7CEE-426E-AE8B-281033CD8C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C223A78F-7CEE-426E-AE8B-281033CD8C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C223A78F-7CEE-426E-AE8B-281033CD8C74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C1145E3-3C20-4ACC-B4D1-6CA025086916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C1145E3-3C20-4ACC-B4D1-6CA025086916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C1145E3-3C20-4ACC-B4D1-6CA025086916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C1145E3-3C20-4ACC-B4D1-6CA025086916}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
