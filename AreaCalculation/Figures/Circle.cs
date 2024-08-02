@@ -15,7 +15,7 @@ namespace AreaCalculation.Figures
             if (!IsPossible(radius))
                 throw new Exception("Radius is impossible");
 
-            return double.Pi * Math.Sqrt(radius * radius);   
+            return double.Pi * radius * radius;   
         }
 
         private static bool IsPossible(double radius)
