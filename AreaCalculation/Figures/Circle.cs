@@ -12,7 +12,15 @@ namespace AreaCalculation.Figures
 
         public static double Area(double radius)
         {
-            return double.Pi * Math.Sqrt(radius * radius);
+            if (!IsPossible(radius))
+                throw new Exception("Radius is impossible");
+
+            return double.Pi * Math.Sqrt(radius * radius);   
+        }
+
+        private static bool IsPossible(double radius)
+        {
+            return radius > 0;
         }
     }
 }

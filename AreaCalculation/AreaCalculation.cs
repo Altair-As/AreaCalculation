@@ -11,7 +11,11 @@ namespace AreaCalculation
         /// <returns>The area of the circle.</returns>
         public double Area(double radius)
         {
-            return Circle.Area(radius);
+            try
+            {
+                return Circle.Area(radius);
+            }
+            catch { throw; }
         }
 
         /// <summary>
@@ -23,7 +27,11 @@ namespace AreaCalculation
         /// <returns>The area of the triangle.</returns>
         public double Area(double a, double b, double c)
         {
-            return Triangle.Area(a, b, c);
+            try
+            {
+                return Triangle.Area(a, b, c);
+            }
+            catch { throw; }
         }
     }
 }
